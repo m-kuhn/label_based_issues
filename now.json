@@ -1,0 +1,13 @@
+{
+  "builds": [{ "src": "src/index.ts", "use": "@now/node@canary" }],
+  "env": {
+    "APP_ID": "@label-based-issues-app-id",
+    "DEBUG": "@label-based-issues-debug",
+    "LOG_LEVEL": "@label-based-issues-log-level",
+    "PRIVATE_KEY": "@label-based-issues-base64-encoded-private-key",
+    "SENTRY_DSN": "@label-based-issues-sentry-dsn",
+    "WEBHOOK_SECRET": "@label-based-issues-webhook-secret"
+  },
+  "routes": [{ "src": "/", "dest": "src/index.ts" }],
+  "version": 2
+}
